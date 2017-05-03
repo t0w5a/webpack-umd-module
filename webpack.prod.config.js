@@ -1,6 +1,6 @@
 var webpack = require('webpack'),
     path = require('path'),
-    VERSION = JSON.stringify(require("./package.json").version );
+    VERSION = JSON.stringify(require("./package.json").version);
 
 module.exports = {
     entry: './src/test-service.class.ts',
@@ -29,11 +29,11 @@ module.exports = {
         new webpack.DefinePlugin({
             __VERSION__: VERSION
         }),
-        new webpack.BannerPlugin('version: ' + VERSION, { raw: false, entryOnly: true })
+        new webpack.BannerPlugin('version: ' + VERSION, {raw: false, entryOnly: true})
     ],
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts', exclude: 'node_modules' }
+            {test: /\.ts$/, loader: 'ts', exclude: 'node_modules'}
         ]
     }
 }

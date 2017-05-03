@@ -22,7 +22,7 @@ declare namespace TestService {
 
         constructor();
 
-        showTest(param:string);
+        showTest(param: string);
     }
 
     // export class SecondClassGoesHere {
